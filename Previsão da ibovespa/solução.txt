@@ -1,0 +1,24 @@
+Passo 1: Aquisição de Dados
+- Obter dados históricos da Ibovespa, incluindo preços de abertura, fechamento, volumes e outros indicadores relevantes.
+Passo 2: Pré-processamento
+Normalizar e padronizar os dados para garantir consistência nas escalas.
+Tratar dados ausentes usando estratégias como interpolação ou preenchimento com médias.
+Considere a engenharia de recursos, derivando características adicionais que podem ser relevantes para a previsão.
+Passo 3: Treinamento Dinâmico
+Organize os dados em camadas dinâmicas, considerando diferentes órbitas de informações.
+Utilize métodos para estabelecer "ligações" temporais entre os dias e camadas.
+Ajuste as "ligações" durante o treinamento para capturar padrões específicos da Ibovespa ao longo do tempo.
+Explore a adaptabilidade dinâmica das camadas para diferentes condições de mercado.
+Passo 4: Inferência
+Realize predições hierárquicas para o fechamento diário da Ibovespa.
+Forneça interpretabilidade embutida nas predições, destacando a influência relativa de diferentes variáveis.
+Passo 5: Avaliação de Desempenho
+Avaliar o desempenho do modelo utilizando métricas financeiras específicas, como erro absoluto médio (MAE) ou erro 
+percentual absoluto (MAPE).
+Realizar validação cruzada temporal para garantir que o modelo generalize bem para diferentes períodos.
+Observações Adicionais:
+Ajuste os parâmetros do modelo com base no desempenho nos dados de treinamento e validação.
+Monitoria e refinamento continuamente do modelo à medida que novos dados estão disponíveis.
+Implementação:
+A implementação prática envolverá o uso de bibliotecas de machine learning, como TensorFlow, PyTorch ou scikit-learn, 
+dependendo da escolha do modelo. Redes neurais, em particular, podem ser exploradas para capturar relações complexas nos dados.
