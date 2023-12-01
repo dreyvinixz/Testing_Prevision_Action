@@ -126,11 +126,11 @@ def main():
 
     # Criar uma instância de TradingStrategy
     strategy_instance = TradingStrategy(symbol, start_date, end_date, 20)
-    # Otimize o período da média móvel
+    # Otimiza o período da média móvel
     best_period, best_return = strategy_instance.optimize_parameters(symbol, start_date, end_date)
     print(f"Melhor período encontrado: {best_period} com Retorno Acumulado: {best_return}")
 
-    # Use os melhores parâmetros na sua estratégia
+    # Usa os melhores parâmetros na sua estratégia
     strategy = TradingStrategy(symbol, start_date, end_date, best_period)
     strategy.download_data()
 
@@ -142,7 +142,7 @@ def main():
     # Engenharia de recursos
     strategy.feature_engineering()
 
-    # Adicione o tratamento de dados ausentes antes da normalização e padronização
+    # Adiciona o tratamento de dados ausentes antes da normalização e padronização
     strategy.handle_missing_data()
 
     # Normalização e padronização
@@ -157,9 +157,9 @@ def main():
     # Exibe estatísticas, visualiza dados e os recursos adicionais
     strategy.display_statistics()
 
-    # Crie uma instância de Visualization e chame a função desejada
     visualization = Visualization(strategy.data , strategy.start_date, strategy.end_date , strategy.period, strategy.symbol)
     visualization.visualize_data_Geral()
+    #visualização de outros graficos:
 """     visualization.visualize_data_PFA()
     visualization.visualize_data_adition()
     visualization.visualize_data_medias()
