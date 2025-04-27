@@ -13,6 +13,7 @@ O objetivo é simular uma estratégia quantitativa básica de trading e construi
 
 O projeto está organizado da seguinte forma:
 
+```brash
 Previsão da Ibovespa/
 ├── data/
 │   └── ibovespa_data.csv         # Dados históricos baixados via yfinance
@@ -21,7 +22,7 @@ Previsão da Ibovespa/
 │   └── visualize_data.py          # Módulo de visualizações gráficas
 ├── solução.txt                    # Rascunhos e anotações
 └── README.md                      # Documentação do projeto
-
+```
 
 - **`main.py`** contém a definição da classe `TradingStrategy`, incluindo:
   - Download de dados históricos;
